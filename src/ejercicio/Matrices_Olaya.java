@@ -18,7 +18,14 @@ public class Matrices_Olaya {
                 matriz[i][j] = random.nextInt(100) + 1; // Generar número entre 1 y 100
             }
         }
-        
+        System.out.println("Matriz generada:");
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print(matriz[i][j] + "\t"); // Mostrar elemento con tabulación
+            }
+            System.out.println(); // Salto de línea al final de cada fila
+        }
+
         
 	}	
 
