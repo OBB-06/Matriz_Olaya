@@ -38,7 +38,18 @@ public class Matrices_Olaya {
                 }
             }
         }
-        
+
+        if (!encontrado) {
+            System.out.println("El número " + numeroBuscado + " no está presente en la matriz.");
+        }
+
+        int suma = 0;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                suma += matriz[i][j];
+            }
+        }
+        System.out.println("\nLa suma de todos los números de la matriz es: " + suma);
 	}	
 
 }
