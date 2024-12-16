@@ -13,14 +13,13 @@ public class Matrices_Olaya {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Matriz:");
-		for (int i = 0; i < matriz.length; i++) { // Iterar filas
-		    for (int j = 0; j < matriz[i].length; j++) { // Iterar columnas
-		        System.out.print(matriz[i][j] + "-"); // Mostrar elemento
-		    }
-		    System.out.println(); // Salto de línea al final de cada fila
-		}
-		
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                matriz[i][j] = random.nextInt(100) + 1; // Generar número entre 1 y 100
+            }
+        }
+        
+        
 	}	
 
 }
