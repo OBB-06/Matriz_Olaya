@@ -25,7 +25,19 @@ public class Matrices_Olaya {
             }
             System.out.println(); // Salto de línea al final de cada fila
         }
+        
+        System.out.println("\nIntroduce un número para buscar en la matriz:");
+        int numeroBuscado = scanner.nextInt();
+        boolean encontrado = false;
 
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                if (matriz[i][j] == numeroBuscado) {
+                    System.out.println("El número " + numeroBuscado + " se encuentra en la posición: Fila " + (i + 1) + ", Columna " + (j + 1));
+                    encontrado = true;
+                }
+            }
+        }
         
 	}	
 
